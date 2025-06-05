@@ -3,6 +3,7 @@ const cors = require("cors"); // ✅ Import CORS
 const app = express();
 const loginRoutes = require("./routes/loginRoutes");
 const userLogRoutes = require("./routes/userLogRoutes"); // 👈 Import userlog routes
+const inverterRoutes = require('./routes/inverterRoutes');
 
 // ✅ Enable CORS for frontend at localhost:3001
 app.use(cors({
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // ✅ Mount your login routes
 app.use("/api", loginRoutes); //FOR USER LOGIN PURPOSE
-
 app.use("/api", userLogRoutes);
+app.use('/api', inverterRoutes); //Inverter data storage
+
 module.exports = app;
