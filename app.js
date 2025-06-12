@@ -6,7 +6,7 @@ const userLogRoutes = require("./routes/userLogRoutes"); // 👈 Import userlog 
 
 // ✅ Enable CORS for frontend at localhost:3001
 app.use(cors({
-  origin: "http://localhost:3001",
+  origin: "http://localhost:3000",
   credentials: true // Optional: only needed if using cookies or sessions
 }));
 
