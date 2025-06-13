@@ -11,6 +11,8 @@ app.use(cors({
   credentials: true // Optional: only needed if using cookies or sessions
 }));
 
+app.use(cors());
+
 // ✅ Enable JSON parsing
 app.use(express.json());
 
