@@ -6,10 +6,10 @@ const userLogRoutes = require("./routes/userLogRoutes"); // 👈 Import userlog 
 const inverterRoutes = require('./routes/inverterRoutes');
 
 // ✅ Enable CORS for frontend at localhost:3001
-app.use(cors({
+/*app.use(cors({
   origin: "http://localhost:3002",
   credentials: true // Optional: only needed if using cookies or sessions
-}));
+}));*/
 
 app.use(cors());
 
