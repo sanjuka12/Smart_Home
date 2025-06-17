@@ -1,3 +1,4 @@
-config/
+
+config/serviceAccountKey.json
 node_modules/
-.env
+
