@@ -1,5 +1,5 @@
 // models/loginModel.js
-const db = require("../config/firebaseConfig");
+const db = require("../config/firebaseConfig.js");
 
 const loginCollection = db.collection("Login");
 
