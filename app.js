@@ -17,6 +17,6 @@ app.use(express.json());
 // ✅ Mount your login routes
 app.use("/", loginRoutes); //FOR USER LOGIN PURPOSE
 app.use("/", userLogRoutes);
-app.use('/', inverterRoutes); //Inverter data storage
+app.use("/", inverterRoutes); //Inverter data storage
 
 module.exports = app;
