@@ -13,6 +13,7 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+*/
 
 //vercel hosting
 
@@ -22,4 +23,3 @@ const serverless = require('serverless-http');
 
 module.exports = serverless(app);
 
-*/
