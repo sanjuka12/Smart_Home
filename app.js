@@ -15,8 +15,8 @@ app.use(cors({
 app.use(express.json());
 
 // ✅ Mount your login routes
-app.use("/api", loginRoutes); //FOR USER LOGIN PURPOSE
-app.use("/api", userLogRoutes);
-app.use('/api', inverterRoutes); //Inverter data storage
+app.use("/", loginRoutes); //FOR USER LOGIN PURPOSE
+app.use("/", userLogRoutes);
+app.use('/', inverterRoutes); //Inverter data storage
 
 module.exports = app;
